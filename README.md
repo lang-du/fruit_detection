@@ -7,5 +7,8 @@ fruit.zip 为数据集
 
 
 使用方法：
-	在目录下打开cmd，输入：python .\infer.py --model_dir=yolov3_mobilenet_v3_large_voc --image_file=images\mixed_6.jpg
+	1、安装paddle2.0.0以上版本
+	2、安装库：pip install -r requirements.txt
+	3、将yolov3_mobilenet_v3_large_voc.zip解压，yolov3_mobilenet_v3_large_voc文件夹下有4个文件infer_cfg.yml,model.pdiparams,model.pdiparams.info,model.pdmodel
+	4、在目录下打开cmd，输入：python .\infer.py --model_dir=yolov3_mobilenet_v3_large_voc --image_file=images\mixed_6.jpg
 	检测结果在output目录中
